@@ -1,0 +1,69 @@
+body {
+  background: #F6F3EB;
+  font-family: "Open Sans", sans-serif;
+  color: #384D9D;
+  font-size: 5vh;
+}
+.pushme {
+  position: relative;
+  font-weight: 700;
+  background-color: rgba(196, 204, 235, 0.205);
+  /* border-radius: 0.6em; */
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1em;
+}
+.pushme .inner {
+  display: inline-block;
+  background-color: rgb(246, 243, 235);
+  /* border-radius: 0.6em; */
+  border-radius: 50%;
+  border: 0.3em solid #d88a8a31;
+  padding: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: translate3d(0.6em, -0.6em, 0);
+          transform: translate3d(0.6em, -0.6em, 0);
+  -webkit-transition: -webkit-transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-delay: 220ms;
+          transition-delay: 220ms;
+}
+/* for now i don't have really good understanding of these stuff  */
+/* i am more back-end guy */
+.pushme:active .inner, .pushme.click .inner {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: -webkit-transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 120ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  text-align: center;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.sig {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
