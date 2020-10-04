@@ -1,3 +1,3 @@
 
 # basically a random qoute generator
-- [] learn bootstrap
+- [x] learn bootstrap 

@@ -1,7 +1,8 @@
 window.onload = function () {
-    var generate = document.getElementById('generate-btn');
-    // i couldn't come up with anything else LOL
-    var quoteOnThePage = document.getElementById('quote');
+    var generate = document.getElementById("generate-btn");
+    var quoteOnThePage = document.getElementById("quote");
+    var author = document.querySelector(".author");
+    var remove = document.getElementById("remove");
     const quotes = [
         {
             quote:
@@ -39,8 +40,16 @@ window.onload = function () {
         return Math.floor(Math.random() * 6);
     }
 
-    generate.addEventListener('click', function () {
-        quoteOnThePage.innerHTML = quotes[randomQuote()]['quote'];
+    // if you call the function in anytime you will get a new number.
+    // because of that, we will call it one time and we will hold info
+    // in one variable. then we passed that to qutoe and author so then
+    // we are sure that quote have a right author
+    generate.addEventListener("click", function () {
+        var holdOneNumber = randomQuote();
+        quoteOnThePage.innerHTML = quotes[holdOneNumber]["quote"];
+        author.innerHTML = quotes[holdOneNumber]["author"];
+        // it's not really necessary, but hey let's be there
+        remove.innerHTML = "";
     });
 
 };
