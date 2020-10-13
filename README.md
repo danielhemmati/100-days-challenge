@@ -16,4 +16,4 @@ https://jsbeginners.com/random-quotes-project
 ***
 ## day-3 
 https://jsbeginners.com/pass-the-message-project/
-
+from here i am going to write js only. for CSS i am workoing on other stuff 
