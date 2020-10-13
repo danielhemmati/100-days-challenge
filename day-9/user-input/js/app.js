@@ -21,6 +21,8 @@
 //     form.addEventListener("submit", function (e) {
 //         e.preventDefault()
 //         const message = document.querySelector("#message");
-//         console.log(message);
+
+//         const messageContent = document.querySelector(".message-content")
+//         messageContent.innerHTML = message.value;
 //     });
-// };
+// }
