@@ -26,3 +26,8 @@
 //         messageContent.innerHTML = message.value;
 //     });
 // }
+
+
+function randomArray(params) {
+    
+}
