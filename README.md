@@ -1,4 +1,4 @@
-# 100 days of code - JS, HTML, CSS, maybe node.js
+# 100 days of code - JS, HTML, CSS, node js, everything code related  
 
 and finally maybe i learn git 😂
 
