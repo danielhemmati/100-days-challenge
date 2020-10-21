@@ -61,6 +61,7 @@
 //     });
 // };
 
+// my vm is faster than my window LOL :|
 (function () {
     var counterBtn = document.querySelectorAll(".counterBtn");
     var counter = 0;
